@@ -36,7 +36,8 @@ nav .nav-links a:hover { color:var(--primary); }
 .hero p { font-size:18px; opacity:.85; margin-bottom:32px; max-width:560px; }
 .hero .btn { display:inline-block; padding:14px 36px; background:var(--accent); color:#1e293b; font-weight:700; border-radius:8px; text-decoration:none; font-size:16px; transition:transform .2s; }
 .hero .btn:hover { transform:translateY(-2px); }
-.hero .hero-img { flex:1; text-align:center; font-size:120px; }
+.hero .hero-img { flex:1; text-align:center; }
+.hero .hero-img img { max-width:100%; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,0.3); }
 
 /* Sections */
 section { padding:80px 0; }
@@ -49,7 +50,8 @@ section:nth-child(even) { background:var(--bg-gray); }
 .products-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:24px; }
 .product-card { background:#fff; border-radius:12px; overflow:hidden; box-shadow:var(--shadow); transition:transform .2s; }
 .product-card:hover { transform:translateY(-4px); }
-.product-card .img { height:200px; background:#eef2ff; display:flex; align-items:center; justify-content:center; font-size:48px; }
+.product-card .img { height:200px; background:#eef2ff; overflow:hidden; }
+.product-card .img img { width:100%; height:100%; object-fit:cover; }
 .product-card .body { padding:20px; }
 .product-card .body h3 { font-size:18px; margin-bottom:6px; }
 .product-card .body .spec { font-size:13px; color:var(--text-light); margin-bottom:8px; }
@@ -58,7 +60,8 @@ section:nth-child(even) { background:var(--bg-gray); }
 /* Cases */
 .cases-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:24px; }
 .case-card { background:#fff; border-radius:12px; overflow:hidden; box-shadow:var(--shadow); }
-.case-card .img { height:200px; background:#f0fdf4; display:flex; align-items:center; justify-content:center; font-size:48px; }
+.case-card .img { height:200px; background:#f0fdf4; overflow:hidden; }
+.case-card .img img { width:100%; height:100%; object-fit:cover; }
 .case-card .body { padding:20px; }
 .case-card .body .tag { display:inline-block; padding:3px 10px; background:#dcfce7; color:#166534; border-radius:4px; font-size:12px; font-weight:600; margin-bottom:8px; }
 .case-card .body h3 { font-size:16px; margin-bottom:6px; }
