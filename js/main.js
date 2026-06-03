@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         message: this.message.value
       };
 
-      fetch('https://formsubmit.co/ajax/your-email@example.com', {
+      fetch('https://formsubmit.co/ajax/pengdengnongfu@gmail.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
